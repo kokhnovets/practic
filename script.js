@@ -330,3 +330,57 @@
 // accumulator.read();
 // accumulator.read();
 // alert(accumulator.value);
+
+// const a = +prompt('a?', '');
+// const b = +prompt('b?', '');
+// let sum = a + b;
+// alert(sum.toFixed(2));
+
+// alert(Math.round(6.35 * 10) / 10);
+
+// function readNumber() {
+//     let num;
+//     do {
+//         num = prompt('?', ' ');
+//     } while (!isFinite(num));
+
+//     if (num === null || num === '') return null;
+
+//     return +num;
+// }
+// readNumber();
+
+
+// Задача не решена
+// function random(a, b) {
+//     return a + Math.random() * (b - a);
+// }
+// alert(random(1, 5));
+// function randomInteger(a, b) {
+//     return
+// }
+
+// function ucFirst(str) {
+//     return str = str[0].toUpperCase() + str.slice(1);
+// }
+// alert(ucFirst("миша"));
+
+// function checkSpam(str) {
+//     let strNew = str.toLowerCase();
+//
+//     return strNew.includes('viagra') || strNew.includes('xxx');
+// }
+// alert(checkSpam('buy ViAgRA now'));
+
+// function trucnate(str, maxLength) {
+//     if (str.length > maxLength) {
+//         return str.slice(0, maxLength) + '...';
+//     }
+//     return str;
+// }
+// alert(trucnate("Вот, что мне хотелось бы сказать на эту тему:", 21));
+
+// function extractCurrencyValue(str) {
+//     return +str.slice(1);
+// }
+// alert( extractCurrencyValue('$120') === 120 );
