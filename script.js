@@ -1,3 +1,5 @@
+'use strict';
+
 // let admin, name;
 // name = 'Джон';
 // admin = name;
@@ -384,3 +386,139 @@
 //     return +str.slice(1);
 // }
 // alert( extractCurrencyValue('$120') === 120 );
+
+// Задачки с ?. (самостоятельно):
+// const key = 'name';
+// let  x = 0;
+// const user = {
+//     address: {
+//         street: {
+//             name: 'simpl'}
+//     },
+//     sayHi(a) {
+//         return alert(++a);
+//     }
+// };
+// console.log(user.sayHi?.(x));
+// console.log(user.address?.street?.name);
+// console.log(user.address?.street?.['name']);
+// delete user.address?.street?.name;
+// console.log(user);
+
+//Массивы:
+// const styles = ['Джаз', 'Блюз'];
+
+// styles.push('Рок-н-ролл');
+// styles[Math.floor((styles.length - 1) / 2)] = 'Классика';
+// console.log(styles.shift());
+// styles.unshift('Рэп', 'Регги');
+// console.log(styles);
+
+// function sumInput() {
+//     let arr = [];
+//     let result = 0;
+//     let a;
+//     do {
+//         a = prompt('Введите значение', '');
+//         if (a == null || a == '' || isNaN(a)) break;
+//         arr.push(+a);
+//     } while (true);
+//     for (let item of arr) {
+//         result += item;
+//     }
+//     return result;
+// }
+// alert(sumInput());
+
+// function camelize(str) {
+//     return str.split('-').map((item, i) => {
+//         if (i == 0) {
+//             return item;
+//         } else {
+//             return item[0].toUpperCase() + item.slice(1);
+//         }
+//     }).join('');
+// }
+// camelize("background-color");
+// camelize("list-style-image");
+
+// function camelize(str) {
+//     return str.split('-').map((item, i) => (i == 0) ? item : item[0].toUpperCase() + item.slice(1)).join('');
+// }
+// camelize("background-color");
+
+// function filterRange(arr, a, b) {
+//     return arr.filter(item => (item >= a && item <= b));
+// }
+// let arr = [5, 3, 8, 1];
+
+// let filtered = filterRange(arr, 1, 4);
+// alert( filtered );
+// alert( arr );
+
+// function filterRangeInPlace(arr, a, b) {
+//     for (let i = 0; i <= arr.length; i++) {
+//         if (arr[i] < a || arr[i] > b) {
+//             arr[i].splice(i, 1);
+//             i--;
+//         }
+//     }
+// }
+// let arr = [5, 3, 8, 1];
+
+// function unique(arr) {
+//     return Array.from(new Set(arr));
+// }
+
+// let values = ["Hare", "Krishna", "Hare", "Krishna",
+//   "Krishna", "Krishna", "Hare", "Hare", ":-O"];
+
+// alert( unique(values) ); // Hare,Krishna,:-O
+
+// function count(obj) {
+//     return Object.keys(obj).length;
+// }
+// let user = {
+//   name: 'John',
+//   age: 30
+// };
+
+// alert( count(user) ); // 2
+
+// Декструризация объекта и массивов:
+// let user = {
+//   name: "John",
+//   years: 30
+// };
+// let { name, years: age, isAdmin = false } = user;
+// console.log(name);
+// console.log(age);
+// console.log(isAdmin);
+
+// let salaries = {
+//     "John": 100,
+//     "Pete": 300,
+//     "Mary": 250
+// };
+// function topSalary(obj) {
+//     let max = 0;
+//     let maxName = null;
+//     for (let [key, value] of Object.entries(obj)) {
+//         if (max < value) {
+//             max = value;
+//             maxName = key;
+//         }
+//     }
+//     return maxName;
+// }
+// console.log(topSalary(salaries));
+
+// let user = {
+//   name: "Василий Иванович",
+//   age: 35
+// };
+// let json = JSON.stringify(user);
+// let newObjectUser = JSON.parse(json);
+// console.log(newObjectUser);
+// newObjectUser.skills = 'junior';
+// console.log(newObjectUser);
