@@ -522,3 +522,89 @@
 // console.log(newObjectUser);
 // newObjectUser.skills = 'junior';
 // console.log(newObjectUser);
+
+//Рекурсия:
+// function sumTo(n) {
+//     if (n == 1) {
+//         return n;
+//     } else {
+//         return n + sumTo(n - 1);
+//     }
+// }
+// sumTo(100);
+
+//Через цикл:
+// function sumTo(n) {
+//     let result = 0;
+//     for (let i = 1; i <= n; i++) {
+//         result += i
+//     }
+//     return result;
+// }
+// sumTo(100);
+
+// function sumTo(n) {
+//   return n * (n + 1) / 2;
+// }
+
+// alert( sumTo(100) );
+
+// function factorial(n) {
+//     if (n == 1) return n;
+//     else return n * factorial(n - 1);
+// }
+// alert( factorial(10) );
+
+// function sum(a) {
+//     return function(b) {
+//         return a + b;
+//     }
+// }
+// sum(1)(2);
+// sum(5)(-1)
+
+// function printNumbers(from, to) {
+//     let current = from;
+//     let timeId = setInterval(function() {
+//         console.log(current);
+//         if(current == to) {
+//             clearInterval(timeId);
+//         }
+//         current++;
+//     }, 1000);
+// }
+// printNumbers(5, 10);
+
+// function printNumbers(from, to) {
+//     let current = from;
+//     let timeId = setTimeout(function go() {
+//         console.log(current);
+//         if(current < to) {
+//             setTimeout(go, 1000);
+//         }
+//         current++;
+//     }, 1000);
+// }
+// printNumbers(5, 10);
+
+//Прототипное наследование
+// let heade = {
+//     glasses: 1
+// };
+
+// let table = {
+//     pen: 3,
+//     __proto__: heade
+// };
+
+// let bed = {
+//     sheet: 1,
+//     pillow: 2,
+//     __proto__: table
+// };
+
+// let pockets = {
+//     money: 2000,
+//     __proto__: bed
+// };
+// console.log(pockets.pen);
