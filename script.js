@@ -608,3 +608,48 @@
 //     __proto__: bed
 // };
 // console.log(pockets.pen);
+
+// Назначение свойств функции:
+//   function makeCounter() {
+//     let count = 0;
+  
+//     function counter() {
+//       return count++;
+//     }
+//     counter.set = function(value) {
+//       return count = value;
+//     }
+//     counter.decrease = function() {
+//       return count--;
+//     }
+//     return counter;
+//   }
+  
+//   let counter = makeCounter();
+  
+//   alert( counter() ); // 0
+//   alert( counter() ); // 1
+  
+//   counter.set(10); // установить новое значение счётчика
+  
+//   alert( counter() ); // 10
+  
+//   counter.decrease(); // уменьшить значение счётчика на 1
+  
+//   alert( counter() ); // 10 (вместо 11)
+
+// Классы: наследование классов
+// class Animal {
+//   constructor(name) {
+//     this.name = name;
+//   }
+// }
+
+// class Rabbit extends Animal {
+//   constructor(name) {
+//     super(name);
+//     this.created = Date.now();
+//   }
+// }
+// let rabbit = new Rabbit("Белый кролик");
+// alert(rabbit.name);
