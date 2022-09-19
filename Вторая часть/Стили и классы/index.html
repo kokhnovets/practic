@@ -25,12 +25,11 @@
       function showNotification({ top = 0, right = 0, className, html }) {
         /* your code */
         let notification = document.createElement("div");
-        notification.className = "notification";
+        notification.classList.add("notification");
         notification.classList.add(className);
-        notification.innerHTML = html;
-        notification.style.top = `${top}px`;
-        notification.style.right = `${right}px`;
-        notification.style.top = `${top}px`;
+        notification.textContent = html;
+        notification.style.top = top + "px";
+        notification.style.right = right + "px";
         document.body.append(notification);
       }
 

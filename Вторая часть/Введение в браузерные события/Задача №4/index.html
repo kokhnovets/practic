@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .open {
+        display: block;
+      }
+      .btnshow::before {
+        content: "-";
+      }
+      .btnhide::before {
+        content: "+";
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+    <div class="btn btnhide">
+      Сладости (нажми меня)!
+      <ul class="list hide">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </div>
+    <script>
+      const btn = document.querySelector(".btn");
+      const ul = btn.querySelector(".list");
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        ul.classList.toggle("hide");
+        btn.classList.toggle("btnhide");
+        btn.classList.toggle("btnshow");
+      });
+    </script>
+  </body>
+</html>

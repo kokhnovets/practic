@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        let ul = document.createElement('ul');
-        let question;
-        document.body.prepend(ul);
-        while(true) {
-            question = prompt('Содержимое пункта', '');
-            if (question == null || question == '') break;
-            let li = document.createElement('li');
-            li.innerHTML = question;
-            ul.append(li);
-        }
+      let ul = document.createElement("ul");
+      document.body.append(ul);
+      let createElem;
+      while (true) {
+        createElem = prompt("Добавь что-то...", "");
+        if (createElem == null || createElem == "") break;
+        let li = document.createElement("li");
+        li.textContent = createElem;
+        ul.append(li);
+      }
     </script>
-</body>
+  </body>
 </html>
