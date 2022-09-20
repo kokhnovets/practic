@@ -4,6 +4,14 @@
     <meta charset="utf-8" />
   </head>
   <body>
+    <style>
+      span:hover {
+        font-weight: bold;
+      }
+      span {
+        cursor: pointer;
+      }
+    </style>
     <ul class="tree" id="tree">
       <li>
         Животные
@@ -55,9 +63,9 @@
       tree.addEventListener("click", function (event) {
         let target = event.target;
         if (target.tagName != "SPAN") return;
-        let childrenElem = target.parentNode.querySelector("ul");
-        if (!childrenElem) return;
-        childrenElem.hidden = !childrenElem.hidden;
+        let child = target.parentElement.querySelector("ul");
+        if (!child) return;
+        child.hidden = !child.hidden;
       });
       // частично решил задачу
     </script>
