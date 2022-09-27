@@ -1,0 +1,3 @@
+C:\Users\Михаил\Desktop\ПП СИМПЛ\TypeScript\Урок №2\HelloApp\obj\Debug\HelloApp.njsproj.AssemblyReference.cache
+C:\Users\Михаил\Desktop\ПП СИМПЛ\TypeScript\Урок №2\HelloApp\obj\Debug\HelloApp.njsproj.CoreCompileInputs.cache
+C:\Users\Михаил\Desktop\ПП СИМПЛ\TypeScript\Урок №2\HelloApp\bin\Microsoft.NodejsTools.WebRole.dll
